@@ -1,0 +1,430 @@
+# depslib dependency file v1.0
+1678529797 source:d:\foldercualan\game\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+
+1678523361 d:\foldercualan\game\game_utils.h
+	<iostream>
+	<fstream>
+	<SDL.h>
+	<vector>
+	<iomanip>
+	<sstream>
+	<cmath>
+	<string>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1620308380 d:\foldercualan\game\texture.h
+	"Game_Utils.h"
+
+1620308380 source:d:\foldercualan\game\texture.cpp
+	"Texture.h"
+
+1678518712 source:d:\foldercualan\game\game_utils.cpp
+	"Game_Utils.h"
+
+1678530244 source:d:\foldercualan\game\character.cpp
+	"Character.h"
+
+1678528705 d:\foldercualan\game\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678530093 source:d:\foldercualan\game\bullet.cpp
+	"Bullet.h"
+
+1678526490 d:\foldercualan\game\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678586184 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\game_utils.cpp
+	"Game_Utils.h"
+
+1678586798 c:\users\admin\downloads\drive-download-20230311t145558z-001\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1678627653 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+	"EnemyArray.h"
+
+1678601792 c:\users\admin\downloads\drive-download-20230311t145558z-001\texture.h
+	"Game_Utils.h"
+
+1678604272 c:\users\admin\downloads\drive-download-20230311t145558z-001\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678600786 c:\users\admin\downloads\drive-download-20230311t145558z-001\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678601792 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\texture.cpp
+	"Texture.h"
+
+1678627282 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\character.cpp
+	"Character.h"
+
+1678603707 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\bullet.cpp
+	"Bullet.h"
+
+1678628529 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\enemy.cpp
+	"Enemy.h"
+
+1678627282 c:\users\admin\downloads\drive-download-20230311t145558z-001\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1620308380 source:c:\users\admin\downloads\drive-download-20230311t145558z-001\enemyarray.cpp
+	"EnemyArray.h"
+
+1678627873 c:\users\admin\downloads\drive-download-20230311t145558z-001\enemyarray.h
+	"Enemy.h"
+	"Game_Utils.h"
+
+1678532184 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\game_utils.cpp
+	"Game_Utils.h"
+
+1678673073 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1678577252 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+	"EnemyArray.h"
+
+1678547792 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\texture.h
+	"Game_Utils.h"
+
+1678550272 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678546786 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678576882 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1678672719 c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\enemyarray.h
+	"Enemy.h"
+	"Game_Utils.h"
+
+1678547792 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\texture.cpp
+	"Texture.h"
+
+1678549706 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\bullet.cpp
+	"Bullet.h"
+
+1678576882 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\character.cpp
+	"Character.h"
+
+1678578128 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\enemy.cpp
+	"Enemy.h"
+
+1678672741 source:c:\users\anh duc\downloads\foldercualan\drive-download-20230311t145558z-001\enemyarray.cpp
+
+1678532184 source:d:\drive-download-20230311t145558z-001\game_utils.cpp
+	"Game_Utils.h"
+
+1678673073 d:\drive-download-20230311t145558z-001\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1678547792 source:d:\drive-download-20230311t145558z-001\texture.cpp
+	"Texture.h"
+
+1678547792 d:\drive-download-20230311t145558z-001\texture.h
+	"Game_Utils.h"
+
+1678549706 source:d:\drive-download-20230311t145558z-001\bullet.cpp
+	"Bullet.h"
+
+1678546786 d:\drive-download-20230311t145558z-001\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678576882 source:d:\drive-download-20230311t145558z-001\character.cpp
+	"Character.h"
+
+1678550272 d:\drive-download-20230311t145558z-001\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678578128 source:d:\drive-download-20230311t145558z-001\enemy.cpp
+	"Enemy.h"
+
+1678576882 d:\drive-download-20230311t145558z-001\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1678672741 source:d:\drive-download-20230311t145558z-001\enemyarray.cpp
+
+1679707006 source:d:\foldercualan\enemyarray.cpp
+	"EnemyArray.h"
+
+1682302210 source:d:\foldercualan\bullet.cpp
+	"Bullet.h"
+
+1682302209 d:\foldercualan\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1679626036 d:\foldercualan\texture.h
+	"Game_Utils.h"
+
+1682073627 d:\foldercualan\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<Windows.h>
+	<Shellapi.h>
+
+1682232516 source:d:\foldercualan\character.cpp
+	"Character.h"
+
+1682227588 d:\foldercualan\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1682302716 source:d:\foldercualan\enemy.cpp
+	"Enemy.h"
+
+1682302716 d:\foldercualan\enemy.h
+	"Icon.h"
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1682073622 source:d:\foldercualan\game_utils.cpp
+	"Game_Utils.h"
+
+1682129873 source:d:\foldercualan\texture.cpp
+	"Texture.h"
+
+1682256967 source:d:\foldercualan\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+	"PlayerPower.h"
+	"TextObjects.h"
+	"Button.h"
+	"Icon.h"
+
+1679622391 d:\foldercualan\enemyarray.h
+	"Enemy.h"
+	"Game_Utils.h"
+
+1678704830 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\bullet.cpp
+	"Bullet.h"
+
+1678704830 c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678704834 c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\texture.h
+	"Game_Utils.h"
+
+1678704832 c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1678704830 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\character.cpp
+	"Character.h"
+
+1678704830 c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678762968 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\enemy.cpp
+	"Enemy.h"
+
+1678762667 c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1678704832 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\enemyarray.cpp
+
+1678704832 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\game_utils.cpp
+	"Game_Utils.h"
+
+1678765612 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+
+1678704834 source:c:\users\admin\downloads\foldercualan-20230314t010509z-001\foldercualan\texture.cpp
+	"Texture.h"
+
+1678887492 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\bullet.cpp
+	"Bullet.h"
+
+1678878205 c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1678654434 c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\texture.h
+	"Game_Utils.h"
+
+1678862738 c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1678654430 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\character.cpp
+	"Character.h"
+
+1678654430 c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1678933165 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\enemy.cpp
+	"Enemy.h"
+
+1678930811 c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1678654432 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\enemyarray.cpp
+
+1678654432 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\game_utils.cpp
+	"Game_Utils.h"
+
+1678931529 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+
+1678863256 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\texture.cpp
+	"Texture.h"
+
+1678933256 source:c:\users\anh duc\downloads\foldercualan-20230315t063712z-001\foldercualan\collision.cpp
+
+1679626036 source:d:\foldercualan\collision.cpp
+
+1682303008 d:\foldercualan\playerpower.h
+	"Game_Utils.h"
+	"Texture.h"
+
+1682228050 source:d:\foldercualan\playerpower.cpp
+	"PlayerPower.h"
+
+1681743766 source:d:\foldercualan\textobjects.cpp
+	"TextObjects.h"
+
+1679999417 d:\foldercualan\textobjects.h
+	"Game_Utils.h"
+
+1682206900 source:d:\foldercualan\button.cpp
+	"Button.h"
+
+1682303009 d:\foldercualan\button.h
+	"Texture.h"
+	"Game_Utils.h"
+	"Enemy.h"
+	"Character.h"
+	"Bullet.h"
+	"PlayerPower.h"
+
+1620308380 source:d:\ki_2_nam_nhat\bulletheaven-main\button.cpp
+	"Button.h"
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\button.h
+	"Texture.h"
+	"Game_Utils.h"
+	"Enemy.h"
+	"Icon.h"
+	"Character.h"
+	"Bullet.h"
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\texture.h
+	"Game_Utils.h"
+
+1678443027 d:\ki_2_nam_nhat\bulletheaven-main\game_utils.h
+	<iostream>
+	<fstream>
+	<SDL.h>
+	<vector>
+	<iomanip>
+	<sstream>
+	<cmath>
+	<string>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\enemy.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+	"Icon.h"
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1620308380 d:\ki_2_nam_nhat\bulletheaven-main\icon.h
+	"Game_Utils.h"
+	"Texture.h"
+
+1682001111 d:\foldercualan\icon.h
+	"Game_Utils.h"
+	"Texture.h"
+
+1682004360 source:d:\foldercualan\icon.cpp
+	"Icon.h"
+
