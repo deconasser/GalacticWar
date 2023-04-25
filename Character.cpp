@@ -433,8 +433,6 @@ void Character::SpawnBullet(SDL_Renderer* screen)
 
             }
     }
-
-
 }
 void Character::HandleBullet1(SDL_Renderer* des)
 {

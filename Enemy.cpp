@@ -135,7 +135,7 @@ void Enemy::MakeBulletUponDeath(vector<Bullet*> &bullet,SDL_Renderer* screen)
     for(int i=0;i<36;i++)
     {
         Bullet*p_bullet=new Bullet();
-        if(type == 9.1 || type == 3.1||type==2.1 || type == 2.2 || type == 9.2)
+        if(type == 9.1 || type == 3.1||type==2.1 || type == 2.2 || type == 9.2|| type == 10.1 || type == 10.2 || type == 10.3)
         {
             p_bullet->LoadTexture("img//Shot_004.png",screen);
             p_bullet->set_is_move(true);
@@ -305,7 +305,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
     {
         for(int i = 0 ; i < 1; i++)
         {
-            delay_shoot_time=150;
+            delay_shoot_time=50;
             Bullet*p_bullet=new Bullet();
             p_bullet->LoadTexture("img//Laser_3_4.png",screen);
             p_bullet->set_type(5);
@@ -313,20 +313,18 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
             p_bullet -> set_angle(0);
             p_bullet->set_y_speed(3);
             p_bullet->set_x_speed(3);
-
             p_bullet->set_pos(x_pos,y_pos+24);
             bullet.push_back(p_bullet);
         }
-
     }
     else if(type == 2.2)
     {
         for(int i = 0 ; i < 1; i++)
         {
-            delay_shoot_time=150;
+            delay_shoot_time=50;
             Bullet*p_bullet=new Bullet();
             p_bullet->LoadTexture("img//Laser_3_4.png",screen);
-            p_bullet->set_type(6);
+            p_bullet->set_type(5);
             p_bullet->set_is_move(true);
             p_bullet -> set_angle(0);
             p_bullet->set_y_speed(3);
@@ -590,7 +588,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
         {
             delay_shoot_time=500;
             Bullet*p_bullet=new Bullet();
-            p_bullet->LoadTexture("img//Laser_2_4.png",screen);
+            p_bullet->LoadTexture("img//Exhaust_2_008.png",screen);
             p_bullet->set_is_move(true);
             //type bullet;
             p_bullet-> set_type(8);
@@ -604,7 +602,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
         {
             delay_shoot_time=500;
             Bullet*p_bullet=new Bullet();
-            p_bullet->LoadTexture("img//Laser_2_4.png",screen);
+            p_bullet->LoadTexture("img//Exhaust_2_008.png",screen);
             p_bullet->set_is_move(true);
             p_bullet-> set_type(9);
             p_bullet->set_angle(-140 + 20*i);
@@ -983,20 +981,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
             bullet.push_back(p_bullet_pos_2_4_cp);
         }
 // con ran
-       /* for(int i = 0 ; i < 1; i++)
-        {
-            delay_shoot_time=50;
-            Bullet*p_bullet_sin_2=new Bullet();
-            p_bullet_sin_2->LoadTexture("img//Laser_3_4.png",screen);
-            p_bullet_sin_2->set_type(5);
-            p_bullet_sin_2->set_is_move(true);
-            p_bullet_sin_2-> set_angle(0);
-            p_bullet_sin_2->set_y_speed(3);
-            p_bullet_sin_2->set_x_speed(3);
-
-            p_bullet_sin_2->set_pos(x_pos,100);
-            bullet.push_back(p_bullet_sin_2);
-        }
+       /*
         for(int i = 0 ; i < 1; i++)
         {
             delay_shoot_time=50;
@@ -1059,7 +1044,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
             for(int j = 0; j < 1; j++)
             {
                 Bullet*p_bullet=new Bullet();
-                p_bullet->LoadTexture("img//BulletThreat6.png",screen);
+                p_bullet->LoadTexture("img//Ship_Exhaust.png",screen);
                 p_bullet->set_is_move(true);
                 p_bullet-> set_angle(180);
                 p_bullet->set_y_speed(3);
@@ -1076,7 +1061,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
         for(int j = 0; j < 1; j++)
         {
             Bullet*p_bullet=new Bullet();
-            p_bullet->LoadTexture("img//BulletThreat6.png",screen);
+            p_bullet->LoadTexture("img//Ship_Exhaust.png",screen);
             p_bullet->set_is_move(true);
             p_bullet-> set_angle(180);
             p_bullet->set_y_speed(3);
@@ -1092,7 +1077,7 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
         for(int j = 0; j < 1; j++)
         {
             Bullet*p_bullet=new Bullet();
-            p_bullet->LoadTexture("img//BulletThreat6.png",screen);
+            p_bullet->LoadTexture("img//Ship_Exhaust.png",screen);
             p_bullet->set_is_move(true);
             p_bullet-> set_angle(180);
             p_bullet->set_y_speed(3);
@@ -1213,7 +1198,7 @@ bool Enemy::Enemy_die()
     }
     else if(type==2.1 || type == 2.2)
     {
-        if(die==30) return 1;
+        if(die==20) return 1;
     }
     else if(type==3.1)
     {
@@ -1229,15 +1214,15 @@ bool Enemy::Enemy_die()
     }
     else if(type == 6.1 || type == 7.1)
     {
-        if(die == 150) return 1;
+        if(die == 100) return 1;
     }
     else if(type == 8.1)
     {
-        if(die == 200) return 1;
+        if(die == 100) return 1;
     }
-    else if(type == 9.1 || type == 10.1)
+    else if(type == 9.1 || type == 10.1 || type == 10.2 || type == 10.3 || type == 9.2)
     {
-        if(die == 400) return 1;
+        if(die == 200) return 1;
     }
     // defense warning
     return 0;

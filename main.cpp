@@ -30,6 +30,7 @@ Texture Background8;
 Texture Background9;
 Texture Background10;
 Texture GameOverUI;
+Texture YouWin;
 Texture Menu;
 Texture Menu_Help_Play;
 Texture Ship_Shop;
@@ -44,7 +45,6 @@ Texture Round7;
 Texture Round8;
 Texture Round9;
 Texture Round10;
-
 Texture Pause;
 Texture Rating;
 Texture Select;
@@ -427,13 +427,11 @@ void Collision(vector<Enemy*>&Enemy_List,Character &spaceship,vector<Bullet*> &B
                             if(Enemy_List.size()==1 && round_game <= 5) {p_enemy->Upgrade_Bonus_Icon(Upgrade_List,screen);}
                             current_score+=(p_enemy->get_score());
                             Enemy_List.erase(Enemy_List.begin()+j);
-
                             if(Enemy_List.empty() == true)
                             {
                                 ready_enemy = false;
                                 game_restarted = false;
                             }
-
                         }
                         if(p_enemy->Enemy_die()==false )Mix_PlayChannel(4,hit,0);
                         else Mix_PlayChannel(4,enemy_die,0);
@@ -443,8 +441,6 @@ void Collision(vector<Enemy*>&Enemy_List,Character &spaceship,vector<Bullet*> &B
         }
     }
     //
-
-
     for(int i = 0; i < Health_List.size();i++)
     {
         Icon* p_health = Health_List.at(i);
@@ -456,7 +452,7 @@ void Collision(vector<Enemy*>&Enemy_List,Character &spaceship,vector<Bullet*> &B
             if(Health_to_spaceship==true)
             {
                 player_power.Increase();
-                Mix_PlayChannel(2,health_collect,0);
+                Mix_PlayChannel(6,health_collect,0);
                 Health_List.erase(Health_List.begin()+i);
             }
             if(p_health->get_is_move()==true)
@@ -484,7 +480,7 @@ void Collision(vector<Enemy*>&Enemy_List,Character &spaceship,vector<Bullet*> &B
             {
                 if(spaceship_count_bullet == 0) {spaceship.set_check_bullet(1);spaceship_count_bullet++;}
                 else if(spaceship_count_bullet == 1) {spaceship.set_check_bullet(2);}
-                Mix_PlayChannel(2,health_collect,0);
+                Mix_PlayChannel(7,health_collect,0);
                 Rocket_List.erase(Rocket_List.begin()+i);
             }
             if(p_rocket->get_is_move()==true)
@@ -640,6 +636,7 @@ void close()
     Background8.Free();
     Background9.Free();
     Background10.Free();
+    YouWin.Free();
     SDL_DestroyRenderer(g_screen);
     g_screen=NULL;
     SDL_DestroyWindow(g_window);
@@ -704,6 +701,7 @@ int main(int argc,char* argv[])
     Menu_help.LoadTexture("img//Menu_help.png",g_screen);
     Menu_Help_Play.LoadTexture("img//Menu_Help_Play.png",g_screen);
     GameOverUI.LoadTexture("img//game_over.png",g_screen);
+    YouWin.LoadTexture("img//YouWin.png",g_screen);
     Ship_Shop.LoadTexture("img//Ship_Shop.png",g_screen);
     Select.LoadTexture("img//select.png",g_screen);
     Selected.LoadTexture("img//selected.png",g_screen);
@@ -727,9 +725,8 @@ int main(int argc,char* argv[])
     Background6.LoadTexture("img/map_round_6.png",g_screen);
     Background7.LoadTexture("img/map_round_7.png",g_screen);
     Background8.LoadTexture("img/map_round_8.png",g_screen);
-    Background9.LoadTexture("img/map_round_9.png",g_screen);
+    Background9.LoadTexture("img/map_round_1.png",g_screen);
     Background10.LoadTexture("img/map_round_10.png",g_screen);
-
     vector<Bullet*> Bullet_List;
     vector<Enemy*> Enemy_List;
     vector<Icon*> Health_List;
@@ -744,7 +741,6 @@ int main(int argc,char* argv[])
     Score_Rating_2.SetColor(Text::WHITE_TEXT);
     Score_Rating_3.SetColor(Text::WHITE_TEXT);
     Score_Rating_4.SetColor(Text::WHITE_TEXT);
-
     // delay
     //int delay_enemy = 0;
     //
@@ -985,6 +981,14 @@ int main(int argc,char* argv[])
                     {player_power.initdata(g_screen);player_power.ShowHeart(g_screen);cnt++;}
                     if(paused)
                     {
+                        round_game = 1;
+                        dem_level = 1;
+                        warPlane.set_level_1(true);
+                        warPlane.set_level_2(false);
+                        warPlane.set_level_3(false);
+                        warPlane.set_level_4(false);
+                        warPlane.set_level_5(false);
+                        SDL_ShowCursor(SDL_ENABLE);
                         SDL_ShowCursor(SDL_ENABLE);
                         while(SDL_PollEvent(&g_event)!=0)
                         {
@@ -1222,7 +1226,118 @@ int main(int argc,char* argv[])
 
                         }
                     }
-                }
+                    if(round_game == 11)
+                    {
+                         round_game = 1;
+                         dem_level = 1;
+                         warPlane.set_level_1(true);
+                         warPlane.set_level_2(false);
+                         warPlane.set_level_3(false);
+                         warPlane.set_level_4(false);
+                         warPlane.set_level_5(false);
+
+                         SDL_ShowCursor(SDL_ENABLE);
+                         while(SDL_PollEvent(&g_event)!=0)
+                         {
+                            if(g_event.type==SDL_QUIT)
+                            {
+                                play=false;
+                            }
+                            RestartButton.HandleRestartButton(g_event,g_screen,Enemy_List,warPlane,Bullet_List,current_score,GameOver,round_game,paused,dem_level);
+                            if(RestartButton.get_sound()==true) {Mix_PlayChannel(4,select_button,0);RestartButton.set_sound(false);}
+                            if(RestartButton.get_restart_game() == true) {
+                            game_restarted = true;RestartButton.set_restart_game_value(false);Time_LoadRound = 0;ready_enemy = true;cnt = 0;
+                            Health_List.clear();
+                            Upgrade_List.clear();
+                            Rocket_List.clear();
+                            player_power.Reset();
+                            generate_health = 0;
+                            generate_rocket = 0;
+                            warPlane.set_check_bullet(0);
+                            spaceship_count_bullet = 0;
+                            player_power.set_beta(180);
+                            }
+                            CloseButton.HandleCloseBTN(g_event,g_screen,QuitMenu,play);
+                            if(CloseButton.get_sound()==true) {Mix_PlayChannel(4,select_button,0);CloseButton.set_sound(false);}
+                            Menu_Button.HandleBackMenuButton(g_event,g_screen,QuitMenu,play);
+                            if(Menu_Button.get_sound()==true) {Mix_PlayChannel(4,select_button,0);Menu_Button.set_sound(false);}
+                            if(Menu_Button.get_backmenu() == true)
+                            {
+                                Background1.Free();
+                                Background2.Free();
+                                Background3.Free();
+                                Background4.Free();
+                                Background5.Free();Background6.Free();
+                                Background7.Free();
+                                Background8.Free();
+                                Background9.Free();
+                                Background10.Free();
+                                SDL_DestroyRenderer(g_screen);
+                                g_screen=NULL;
+                                SDL_DestroyWindow(g_window);
+                                g_window=NULL;
+                                Mix_FreeChunk(hit);
+                                hit=NULL;
+                                Mix_FreeChunk(Underground);
+                                Underground = nullptr;
+                                Mix_FreeChunk(enemy_die);
+                                enemy_die = NULL;
+                                Mix_FreeChunk(dead);
+                                dead = NULL;
+                                Mix_FreeChunk(Menu_game);
+                                Menu_game = NULL;
+                                Mix_FreeChunk(upgrade_spaceship);
+                                upgrade_spaceship=NULL;
+                                Mix_FreeChunk(shot);
+                                shot=NULL;
+                                Menu.Free();
+                                YouWin.Free();
+                                Round1.Free();
+                                Round2.Free();
+                                Round3.Free();
+                                Round4.Free();
+                                Round5.Free();
+                                Round6.Free();
+                                Round7.Free();
+                                Round8.Free();
+                                Round9.Free();
+                                Round10.Free();
+                                Ship_Shop.Free();
+                                Select1.Free();
+                                Select2.Free();
+                                Select3.Free();
+                                Selected.Free();
+                                GameOverUI.Free();
+                                Pause.Free();
+                                Rating.Free();
+                                Menu_help.Free();
+                                paused_font=NULL;
+                                general_font = NULL;
+                                Mix_FreeChunk(select_button);
+                                select_button=NULL;
+                                Menu_Button.set_backmenu(false);
+                                goto loop;
+                            }
+                            QR.HandleQANDRButton(g_event,g_screen,paused);
+                            if(QR.get_sound()==true) {Mix_PlayChannel(4,select_button,0);QR.set_sound(false);}
+                         }
+                         YouWin.SetRect(SCREEN_WIDTH/3,100);
+                         YouWin.Render(g_screen);
+                         CloseButton.SetRect(SCREEN_WIDTH/3+80,350);
+                         CloseButton.Render(g_screen);
+                         Menu_Button.SetRect(SCREEN_WIDTH/3+260,250);
+                         Menu_Button.Render(g_screen);
+                         QR.SetRect(SCREEN_WIDTH/3+260,350);
+                         QR.Render(g_screen);
+                         RestartButton.SetRect(SCREEN_WIDTH/3+80,250);
+                         RestartButton.Render(g_screen);
+                         numberofcurrentscore.Set_Text(number_to_string(current_score));
+                         numberofcurrentscore.LoadFromRenderText(paused_font,g_screen);
+                         numberofcurrentscore.RenderText(g_screen,SCREEN_WIDTH/2+5,SCREEN_HEIGHT/2+125);
+                         CurrentScore.RenderText(g_screen,SCREEN_WIDTH/2-125,SCREEN_HEIGHT/2+125);
+                         SDL_RenderPresent(g_screen);
+                        }
+                    }
                 else
                     {
                      round_game = 1;
@@ -1232,7 +1347,6 @@ int main(int argc,char* argv[])
                      warPlane.set_level_3(false);
                      warPlane.set_level_4(false);
                      warPlane.set_level_5(false);
-
                      SDL_ShowCursor(SDL_ENABLE);
                      while(SDL_PollEvent(&g_event)!=0)
                      {
@@ -1288,6 +1402,7 @@ int main(int argc,char* argv[])
                             Mix_FreeChunk(shot);
                             shot=NULL;
                             Menu.Free();
+                            YouWin.Free();
                             Round1.Free();
                             Round2.Free();
                             Round3.Free();

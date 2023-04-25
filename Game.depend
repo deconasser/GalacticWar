@@ -428,3 +428,87 @@
 1682004360 source:d:\foldercualan\icon.cpp
 	"Icon.h"
 
+1682302210 source:d:\bigproject_ltnc\bullet.cpp
+	"Bullet.h"
+
+1682302209 d:\bigproject_ltnc\bullet.h
+	"Texture.h"
+	"Game_Utils.h"
+
+1679626036 d:\bigproject_ltnc\texture.h
+	"Game_Utils.h"
+
+1682073627 d:\bigproject_ltnc\game_utils.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<Windows.h>
+	<Shellapi.h>
+
+1682206900 source:d:\bigproject_ltnc\button.cpp
+	"Button.h"
+
+1682303009 d:\bigproject_ltnc\button.h
+	"Texture.h"
+	"Game_Utils.h"
+	"Enemy.h"
+	"Character.h"
+	"Bullet.h"
+	"PlayerPower.h"
+
+1682302716 d:\bigproject_ltnc\enemy.h
+	"Icon.h"
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+	"Character.h"
+
+1682001111 d:\bigproject_ltnc\icon.h
+	"Game_Utils.h"
+	"Texture.h"
+
+1682227588 d:\bigproject_ltnc\character.h
+	"Game_Utils.h"
+	"Texture.h"
+	"Bullet.h"
+
+1682303008 d:\bigproject_ltnc\playerpower.h
+	"Game_Utils.h"
+	"Texture.h"
+
+1682404958 source:d:\bigproject_ltnc\character.cpp
+	"Character.h"
+
+1682404148 source:d:\bigproject_ltnc\enemy.cpp
+	"Enemy.h"
+
+1682073622 source:d:\bigproject_ltnc\game_utils.cpp
+	"Game_Utils.h"
+
+1682004360 source:d:\bigproject_ltnc\icon.cpp
+	"Icon.h"
+
+1682404083 source:d:\bigproject_ltnc\main.cpp
+	"Game_Utils.h"
+	"Texture.h"
+	"Character.h"
+	"Enemy.h"
+	"PlayerPower.h"
+	"TextObjects.h"
+	"Button.h"
+	"Icon.h"
+
+1679999417 d:\bigproject_ltnc\textobjects.h
+	"Game_Utils.h"
+
+1682228050 source:d:\bigproject_ltnc\playerpower.cpp
+	"PlayerPower.h"
+
+1681743766 source:d:\bigproject_ltnc\textobjects.cpp
+	"TextObjects.h"
+
+1682129873 source:d:\bigproject_ltnc\texture.cpp
+	"Texture.h"
+
