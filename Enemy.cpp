@@ -1151,35 +1151,35 @@ bool Enemy::Enemy_die()
 {
     if(type==1.1)
     {
-        if(die==1) return 1;
+        if(die==5) return 1;
     }
     else if(type==2.1 || type == 2.2)
     {
-        if(die==1) return 1;
+        if(die==10) return 1;
     }
     else if(type==3.1)
     {
-        if(die==1) return 1;
+        if(die==20) return 1;
     }
     else if(type==4.1)
     {
-        if(die==1) return 1;
+        if(die==50) return 1;
     }
     else if(type==5.1)
     {
-        if(die==1) return 1;
+        if(die==50) return 1;
     }
     else if(type == 6.1 || type == 7.1)
     {
-        if(die == 1) return 1;
+        if(die == 100) return 1;
     }
     else if(type == 8.1)
     {
-        if(die == 1) return 1;
+        if(die == 100) return 1;
     }
     else if(type == 9.1 || type == 10.1 || type == 10.2 || type == 10.3 || type == 9.2)
     {
-        if(die == 1) return 1;
+        if(die == 200) return 1;
     }
     // defense warning
     return 0;
