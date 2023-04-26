@@ -110,7 +110,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
 
     if(Enemy_List.size()<=0)
     {
-        if(round_game == 9)
+        if(round_game == 7)
         {
 
             int random5 = rand() % ( (SCREEN_HEIGHT -150*3)- 100 + 1) + 100;//random trong khoang min->max
@@ -129,7 +129,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
                 Enemy_List.push_back(p_enemy);
             }
         }
-        if(round_game == 2)
+        if(round_game == 8)
         {
             for(int i=0;i<2;i++)
             {
@@ -151,7 +151,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
                 Enemy_List.push_back(p_enemy);
             }
         }
-        if (round_game == 3)
+        if (round_game == 9)
         {
             for(int i=0;i<5;i++)
             {
@@ -166,7 +166,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
             }
 
         }
-        if(round_game == 4)
+        if(round_game == 10)
         {
             for(int i = 0 ; i < 1; i++)
             {
@@ -220,7 +220,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
                 Enemy_List.push_back(p_enemy);
             }
         }
-        if(round_game == 7)
+        if(round_game == 1)
         {
             for(int i = 0 ; i < 1; i++)
             {
@@ -235,7 +235,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
             }
 
         }
-        if(round_game == 8)
+        if(round_game == 2)
         {
             for(int i = 0 ; i < 2; i++)
             {
@@ -250,7 +250,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
             }
 
         }
-        if(round_game == 1)
+        if(round_game == 3)
         {
             for(int i=0;i<1;i++)
             {
@@ -273,7 +273,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
                 Enemy_List.push_back(p_enemy1);
             }
         }
-        if(round_game == 9)
+        if(round_game == 4)
         {
             Enemy* p_enemy1= new Enemy();
             p_enemy1->set_type_threat(10.1);
