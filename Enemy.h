@@ -76,7 +76,6 @@ private:
    // int checkbullet;
     double type;
     bool changespawn;
-    bool reverse_direction;
     double angle,angle_cp;
     double angle2,angle2_cp;
     double angle3,angle3_cp;

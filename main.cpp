@@ -110,7 +110,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
 
     if(Enemy_List.size()<=0)
     {
-        if(round_game == 1)
+        if(round_game == 9)
         {
 
             int random5 = rand() % ( (SCREEN_HEIGHT -150*3)- 100 + 1) + 100;//random trong khoang min->max
@@ -250,7 +250,7 @@ void GenerateEnemy(vector<Enemy*> &Enemy_List,SDL_Renderer* screen,int& round_ga
             }
 
         }
-        if(round_game == 10)
+        if(round_game == 1)
         {
             for(int i=0;i<1;i++)
             {
@@ -359,7 +359,7 @@ void Collision(vector<Enemy*>&Enemy_List,Character &spaceship,vector<Bullet*> &B
                         {
                             for(int i = 1 ; i < score.size();i++)
                             {
-                            out << score[i] << endl;
+                                out << score[i] << endl;
                             }
                         }
                         out.close();
@@ -1142,7 +1142,7 @@ int main(int argc,char* argv[])
                         else if(round_game==9) Round9.Render(g_screen);
                         else if(round_game==10) Round10.Render(g_screen);
                         Time_LoadRound++;SDL_ShowCursor(SDL_DISABLE);
-                        SDL_RenderPresent(g_screen);SDL_Delay(1500);}
+                        SDL_RenderPresent(g_screen);SDL_Delay(1000);}
                         else
                         {
                             SDL_RenderClear(g_screen);

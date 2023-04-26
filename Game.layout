@@ -2,24 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="Texture.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="PlayerPower.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1326" topLine="9" />
+			<Cursor1 position="506" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="icon.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Bullet.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="475" topLine="0" />
+			<Cursor1 position="857" topLine="36" />
 		</Cursor>
 	</File>
-	<File name="Icon.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Button.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="622" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Button.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2851" topLine="0" />
+			<Cursor1 position="9977" topLine="9" />
 		</Cursor>
 	</File>
 	<File name="Enemy.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
@@ -27,24 +22,54 @@
 			<Cursor1 position="3125" topLine="1" />
 		</Cursor>
 	</File>
-	<File name="Character.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="PlayerPower.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="15210" topLine="439" />
+			<Cursor1 position="628" topLine="3" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="Enemy.cpp" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="26267" topLine="1364" />
+			<Cursor1 position="40211" topLine="1193" />
 		</Cursor>
 	</File>
-	<File name="Button.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+	<File name="Texture.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9977" topLine="0" />
+			<Cursor1 position="1017" topLine="25" />
 		</Cursor>
 	</File>
 	<File name="Character.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2030" topLine="48" />
+			<Cursor1 position="2015" topLine="54" />
+		</Cursor>
+	</File>
+	<File name="Texture.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="408" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Character.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5171" topLine="138" />
+		</Cursor>
+	</File>
+	<File name="icon.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="475" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Icon.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="622" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="TextObjects.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="732" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="Game_Utils.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="517" topLine="2" />
 		</Cursor>
 	</File>
 	<File name="Game_Utils.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
@@ -52,49 +77,24 @@
 			<Cursor1 position="1002" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="TextObjects.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="507" topLine="22" />
-		</Cursor>
-	</File>
-	<File name="TextObjects.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="732" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Texture.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="299" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Enemy.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="40653" topLine="1029" />
+			<Cursor1 position="28954" topLine="801" />
 		</Cursor>
 	</File>
 	<File name="Bullet.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1120" topLine="0" />
+			<Cursor1 position="64" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="PlayerPower.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="Button.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1570" topLine="0" />
+			<Cursor1 position="839" topLine="8" />
 		</Cursor>
 	</File>
-	<File name="Game_Utils.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+	<File name="TextObjects.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="783" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="PlayerPower.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="628" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Bullet.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="207" topLine="0" />
+			<Cursor1 position="24" topLine="29" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

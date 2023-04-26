@@ -21,9 +21,7 @@ public:
 	void HandleMapButton(SDL_Event event,SDL_Renderer* screen,bool &menu,bool &help);
 	void HandleExitButton(SDL_Event event,SDL_Renderer* screen,bool &QuitMenu);
 	void HandleCloseBTN(SDL_Event event,SDL_Renderer* screen,bool &QuitMenu,bool &play);
-
 	void HandleFaceBook(SDL_Event event,SDL_Renderer* screen,bool &menu);
-
 	void HandleBackButton(SDL_Event event,SDL_Renderer* screen,bool &menu,bool &help,bool& help2);
 	void HandleBackButton2(SDL_Event event,SDL_Renderer* screen,bool &menu,bool &help,bool& help2);
 	void HandleRestartButton(SDL_Event event,SDL_Renderer* screen,

@@ -1,6 +1,5 @@
 #ifndef BULLETOBJECT_H_INCLUDED
 #define BULLETOBJECT_H_INCLUDED
-
 #include "Texture.h"
 #include "Game_Utils.h"
 using namespace std;
@@ -25,7 +24,6 @@ public:
     void Bullet_Circle (vector<Bullet*> &bullet,SDL_Renderer* screen);
     double get_bullet_x_pos () const {return x_pos;}
     double get_bullet_y_pos () const {return y_pos;}
-
 private:
     double x_pos;
     double y_pos;
@@ -38,6 +36,5 @@ private:
     unsigned long long CurrentTime;
     unsigned long long LastTime;
 };
-
 #endif
 

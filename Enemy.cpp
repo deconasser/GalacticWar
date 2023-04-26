@@ -19,7 +19,6 @@ Enemy::Enemy()
     type = 1.5;
     CurrentTime = 0;
     LastTime = 0;
-
     changespawn=0;
     angle=0;
     angle_cp = 0;
@@ -30,7 +29,6 @@ Enemy::Enemy()
     angle4 = 270;
     angle4_cp = 270;
     angle_move=0;
-    reverse_direction=0;
     type=0;
     delay_shoot_time = 300;
     delay_shoot_time2 = 300;
@@ -183,11 +181,6 @@ void Enemy::MakeBulletUponDeath(vector<Bullet*> &bullet,SDL_Renderer* screen)
 }
 void Enemy::rotate_angle()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle>=360)
     {
         angle=0;
@@ -196,11 +189,6 @@ void Enemy::rotate_angle()
 }
 void Enemy::rotate_angle_cp()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle_cp<=-360)
     {
         angle_cp=0;
@@ -209,11 +197,6 @@ void Enemy::rotate_angle_cp()
 }
 void Enemy::rotate_angle_2()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle2>=450)
     {
         angle2=90;
@@ -222,11 +205,6 @@ void Enemy::rotate_angle_2()
 }
 void Enemy::rotate_angle_2_cp()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle2_cp<=-270)
     {
         angle2_cp=90;
@@ -235,11 +213,6 @@ void Enemy::rotate_angle_2_cp()
 }
 void Enemy::rotate_angle_3()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle3>=540)
     {
         angle3=180;
@@ -248,11 +221,6 @@ void Enemy::rotate_angle_3()
 }
 void Enemy::rotate_angle_3_cp()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle3_cp<=-180)
     {
         angle3_cp=180;
@@ -262,11 +230,6 @@ void Enemy::rotate_angle_3_cp()
 
 void Enemy::rotate_angle_4()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle4>=630)
     {
         angle4 = 270;
@@ -275,11 +238,6 @@ void Enemy::rotate_angle_4()
 }
 void Enemy::rotate_angle_4_cp()
 {
-    if(reverse_direction==1)
-    {
-        angle_rotate_speed=-angle_rotate_speed;
-        reverse_direction=0;
-    }
     if(angle4_cp<=-90)
     {
         angle4_cp=270;
@@ -590,7 +548,6 @@ void Enemy::MakeBullet(vector<Bullet*> &bullet,SDL_Renderer* screen,Character &s
             Bullet*p_bullet=new Bullet();
             p_bullet->LoadTexture("img//Exhaust_2_008.png",screen);
             p_bullet->set_is_move(true);
-            //type bullet;
             p_bullet-> set_type(8);
             p_bullet->set_angle(angle + 20*i);
             p_bullet->set_x_speed(2);
@@ -1194,35 +1151,35 @@ bool Enemy::Enemy_die()
 {
     if(type==1.1)
     {
-        if(die==10) return 1;
+        if(die==1) return 1;
     }
     else if(type==2.1 || type == 2.2)
     {
-        if(die==20) return 1;
+        if(die==1) return 1;
     }
     else if(type==3.1)
     {
-        if(die==50) return 1;
+        if(die==1) return 1;
     }
     else if(type==4.1)
     {
-        if(die==80) return 1;
+        if(die==1) return 1;
     }
     else if(type==5.1)
     {
-        if(die==100) return 1;
+        if(die==1) return 1;
     }
     else if(type == 6.1 || type == 7.1)
     {
-        if(die == 100) return 1;
+        if(die == 1) return 1;
     }
     else if(type == 8.1)
     {
-        if(die == 100) return 1;
+        if(die == 1) return 1;
     }
     else if(type == 9.1 || type == 10.1 || type == 10.2 || type == 10.3 || type == 9.2)
     {
-        if(die == 200) return 1;
+        if(die == 1) return 1;
     }
     // defense warning
     return 0;

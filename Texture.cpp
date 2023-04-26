@@ -20,9 +20,7 @@ bool Texture::LoadTexture(string path,SDL_Renderer* screen)
     if(load_surface !=NULL)
     {
         SDL_SetColorKey(load_surface,SDL_TRUE,SDL_MapRGB(load_surface->format,COLOR_KEY_R, COLOR_KEY_G, COLOR_KEY_B));
-
-        if(path == "img/warPlane.png")SDL_SetColorKey(load_surface, SDL_TRUE, SDL_MapRGB(load_surface->format, 0xFF, 0xFF, 0xFF));
-        else if(path == "img//select.png") SDL_SetColorKey(load_surface, SDL_TRUE, SDL_MapRGB(load_surface->format, 0xFF, 0xFF, 0xFF));
+        if(path == "img//select.png") SDL_SetColorKey(load_surface, SDL_TRUE, SDL_MapRGB(load_surface->format, 0xFF, 0xFF, 0xFF));
         else if(path == "img//selected.png" ) SDL_SetColorKey(load_surface, SDL_TRUE, SDL_MapRGB(load_surface->format, 0xFF, 0xFF, 0xFF));
         else if(path == "img//select_Red.png") SDL_SetColorKey(load_surface, SDL_TRUE, SDL_MapRGB(load_surface->format, 0xFF, 0xFF, 0xFF));
         new_texture=SDL_CreateTextureFromSurface(screen, load_surface);
@@ -38,9 +36,9 @@ bool Texture::LoadTexture(string path,SDL_Renderer* screen)
 }
 void Texture::MoveBackGround(SDL_Renderer* screen,const SDL_Rect* clip)
 {
-    SDL_Rect renderquad1={Rect.x,Rect.y,Rect.w,Rect.h};
+    SDL_Rect renderquad1={Rect.x,0,Rect.w,Rect.h};
     SDL_RenderCopy(screen,p_texture,clip,&renderquad1);
-    SDL_Rect renderquad2={Rect.x-SCREEN_WIDTH,Rect.y,Rect.w,Rect.h};
+    SDL_Rect renderquad2={Rect.x-SCREEN_WIDTH,0,Rect.w,Rect.h};
     SDL_RenderCopy(screen,p_texture,clip,&renderquad2);
     Rect.x+=1;
     if(Rect.x>=SCREEN_WIDTH){Rect.x=0;}

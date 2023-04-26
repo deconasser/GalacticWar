@@ -23,7 +23,6 @@ Character::Character()
     level_3 = false;
     level_4 = false;
     level_5 = false;
-
     spawn_bullet = false;
 }
 Character::~Character()
@@ -150,79 +149,78 @@ void Character::SpawnBullet(SDL_Renderer* screen)
         if(checkbullet!=0 && CurrentTime>LastTime+200)
         {
 
-        if(checkbullet==1 && increase_bullet == 1)
-        {
-            Bullet* p_bullet_1= new Bullet();
-            p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+10-6);
-            p_bullet_1->set_x_speed(7);
-            p_bullet_1->set_y_speed(7);
-            p_bullet_1->set_angle(angle);
-            p_bullet_1->set_is_move(true);
-            p_bullet_list.push_back(p_bullet_1);
-            LastTime=CurrentTime;
+            if(checkbullet==1 && increase_bullet == 1)
+            {
+                Bullet* p_bullet_1= new Bullet();
+                p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+10-6);
+                p_bullet_1->set_x_speed(7);
+                p_bullet_1->set_y_speed(7);
+                p_bullet_1->set_angle(angle);
+                p_bullet_1->set_is_move(true);
+                p_bullet_list.push_back(p_bullet_1);
+                LastTime=CurrentTime;
+                Bullet* p_bullet_2= new Bullet();
+                p_bullet_2->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_2->set_pos(Rect.x+width_frame-15,Rect.y+4*10-6);
+                p_bullet_2->set_x_speed(7);
+                p_bullet_2->set_y_speed(7);
+                p_bullet_2->set_angle(angle);
+                p_bullet_2->set_is_move(true);
+                p_bullet_list.push_back(p_bullet_2);
+                LastTime=CurrentTime;
+                spawn_bullet = true;
+            }
+            if(checkbullet == 1 && increase_bullet == 0)
+            {
+                Bullet* p_bullet_1= new Bullet();
+                p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+25-6);
+                p_bullet_1->set_x_speed(7);
+                p_bullet_1->set_y_speed(7);
+                p_bullet_1->set_angle(angle);
+                p_bullet_1->set_is_move(true);
+                p_bullet_list.push_back(p_bullet_1);
+                LastTime=CurrentTime;
+                spawn_bullet = true;
+            }
+            if(checkbullet==1 && increase_bullet == 2)
+            {
+                Bullet* p_bullet_1= new Bullet();
+                p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+25-6);
+                p_bullet_1->set_x_speed(7);
+                p_bullet_1->set_y_speed(7);
+                p_bullet_1->set_angle(angle);
+                p_bullet_1->set_is_move(true);
+                p_bullet_list.push_back(p_bullet_1);
+                LastTime=CurrentTime;
 
-            Bullet* p_bullet_2= new Bullet();
-            p_bullet_2->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_2->set_pos(Rect.x+width_frame-15,Rect.y+4*10-6);
-            p_bullet_2->set_x_speed(7);
-            p_bullet_2->set_y_speed(7);
-            p_bullet_2->set_angle(angle);
-            p_bullet_2->set_is_move(true);
-            p_bullet_list.push_back(p_bullet_2);
-            LastTime=CurrentTime;
-            spawn_bullet = true;
+                Bullet* p_bullet_2= new Bullet();
+                p_bullet_2->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_2->set_pos(Rect.x+width_frame-15,Rect.y+10-6);
+                p_bullet_2->set_x_speed(7);
+                p_bullet_2->set_y_speed(7);
+                p_bullet_2->set_angle(angle);
+                p_bullet_2->set_is_move(true);
+                p_bullet_2->set_type(10);
+                p_bullet_list.push_back(p_bullet_2);
+                LastTime=CurrentTime;
+
+                Bullet* p_bullet_3= new Bullet();
+                p_bullet_3->LoadTexture("img/Exhaust_3_2.png",screen);
+                p_bullet_3->set_pos(Rect.x+width_frame-15,Rect.y+4*10-6);
+                p_bullet_3->set_x_speed(7);
+                p_bullet_3->set_y_speed(7);
+                p_bullet_3->set_angle(angle);
+                p_bullet_3->set_is_move(true);
+                p_bullet_3->set_type(11);
+                p_bullet_list.push_back(p_bullet_3);
+                LastTime=CurrentTime;
+                spawn_bullet = true;
+
+            }
         }
-        if(checkbullet == 1 && increase_bullet == 0)
-        {
-            Bullet* p_bullet_1= new Bullet();
-            p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+25-6);
-            p_bullet_1->set_x_speed(7);
-            p_bullet_1->set_y_speed(7);
-            p_bullet_1->set_angle(angle);
-            p_bullet_1->set_is_move(true);
-            p_bullet_list.push_back(p_bullet_1);
-            LastTime=CurrentTime;
-            spawn_bullet = true;
-        }
-        if(checkbullet==1 && increase_bullet == 2)
-        {
-            Bullet* p_bullet_1= new Bullet();
-            p_bullet_1->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_1->set_pos(Rect.x+width_frame-15,Rect.y+25-6);
-            p_bullet_1->set_x_speed(7);
-            p_bullet_1->set_y_speed(7);
-            p_bullet_1->set_angle(angle);
-            p_bullet_1->set_is_move(true);
-            p_bullet_list.push_back(p_bullet_1);
-            LastTime=CurrentTime;
-
-            Bullet* p_bullet_2= new Bullet();
-            p_bullet_2->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_2->set_pos(Rect.x+width_frame-15,Rect.y+10-6);
-            p_bullet_2->set_x_speed(7);
-            p_bullet_2->set_y_speed(7);
-            p_bullet_2->set_angle(angle);
-            p_bullet_2->set_is_move(true);
-            p_bullet_2->set_type(10);
-            p_bullet_list.push_back(p_bullet_2);
-            LastTime=CurrentTime;
-
-            Bullet* p_bullet_3= new Bullet();
-            p_bullet_3->LoadTexture("img/Exhaust_3_2.png",screen);
-            p_bullet_3->set_pos(Rect.x+width_frame-15,Rect.y+4*10-6);
-            p_bullet_3->set_x_speed(7);
-            p_bullet_3->set_y_speed(7);
-            p_bullet_3->set_angle(angle);
-            p_bullet_3->set_is_move(true);
-            p_bullet_3->set_type(11);
-            p_bullet_list.push_back(p_bullet_3);
-            LastTime=CurrentTime;
-            spawn_bullet = true;
-
-        }
-    }
             if(checkbullet!=0 && CurrentTime>LastTime+700)
             {
                 Bullet* p_bullet= new Bullet();
