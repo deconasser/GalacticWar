@@ -24,24 +24,34 @@ You will take on the role of a skilled pilot in the Galactic Protection Alliance
 
 ### 1. Diverse Game Modes:
 - **Campaign Mode:** Engage in missions to protect colonies, eliminate enemies, and uncover the mysteries of the universe.
+- 
 ![image](https://github.com/user-attachments/assets/2ef4e27b-08d8-4ce2-b964-1ce75ee244b1)
 <br>
+
 ![image](https://github.com/user-attachments/assets/b1f72cbd-182f-4068-a7bb-04503899e4b5)
 <br>
+
 ![image](https://github.com/user-attachments/assets/e86fe5f9-9b8d-4c79-b81a-125d43cbc3e5)
 <br>
+
 ![image](https://github.com/user-attachments/assets/94c6dab9-ea9e-45cb-aef9-1020cbc2f8c2)
 <br>
+
 ![image](https://github.com/user-attachments/assets/289ef019-7c79-4919-9e2a-c80cc34cdcd1)
 <br>
+
 ![image](https://github.com/user-attachments/assets/c7bb8586-ac3e-4f7e-b4d6-a272475dcfcd)
 <br>
+
 ![image](https://github.com/user-attachments/assets/c39e3305-7fa6-493b-bd11-6c31bf03aeab)
 <br>
+
 ![image](https://github.com/user-attachments/assets/04ead2f0-64dd-4b85-9c39-ac7f23ae8270)
 <br>
+
 ![image](https://github.com/user-attachments/assets/dc51e914-e218-4ae9-991e-c5eef500c572)
 <br>
+
 ![image](https://github.com/user-attachments/assets/303d6a60-aefc-4030-8ae0-5b84a4885768)
 
 - **Survival Mode:** Fight endless waves of Invader attacks and see how long you can survive.
