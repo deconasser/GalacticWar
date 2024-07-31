@@ -11,7 +11,7 @@
 </div>
 
 ---
-
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=S0ftD6MrBwQ&t=82s)
 ## Game Title: Space Game GUI
 
 ## Storyline:
@@ -81,7 +81,6 @@ You will take on the role of a skilled pilot in the Galactic Protection Alliance
 ![map_round_3](https://github.com/user-attachments/assets/f00641b4-3bfb-4ffc-950c-ad17b5dec3d9)
 ![map_round_2](https://github.com/user-attachments/assets/06f87ba3-6603-4f8a-96f7-171714d28804)
 ![map_round_1](https://github.com/user-attachments/assets/1009e58a-87f5-4758-89a6-7f2d5a7c34ab)
-![Damaged_Ship_01_2](https://github.com/user-attachments/assets/2db8b489-26e7-4001-bf39-0f3ec16bf446)
 ![map_round_10](https://github.com/user-attachments/assets/ff506635-0ad7-4924-92fe-efe225c7a661)
 
 ### 2. Spaceship Upgrades:
